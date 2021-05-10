@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* css/src/layout_001.css */
+
+/* reset.css */
+body{
+  margin:0;
+}
+/* design.css */
+
+#wrap {
+  width:1200px;
+  height:500px;
+  margin:0 auto;
+  background-color:#afa;
+}
+
+/* #header ========================== */
+#header{
+  width: 800px; height:100px;
+  margin:auto;
+  background-color:#f07;
+}
+
+/* #section =========================== */
+#section{
+  width:100%; height:300px;
+  background:#fa0;
+}
+
+/* #footer ============================ */
+#footer{
+  width:inherit; height:100px;
+  background-color:#03f;
+}
+
