@@ -1,0 +1,164 @@
+/* layout_002.css */
+/* reset.css */
+html,body,
+h1,h2,h3,h4,h5,h6,
+div,ul,ol,li,dl,dt,dd {
+   margin:0; padding:0; border:0; outline:0; }
+ul,ol,li { list-style:none; }
+
+
+
+/* common.css */
+.clearfix:after,
+.clearfix::after{
+  content:""; display:block; width:100%; height:0; clear:both;}
+
+/* ---------------------------- */
+#wrap{
+  width:600px; height:auto;
+  margin:auto;
+  background-color:transparent;
+}
+
+#header {
+  width:100%; height:auto;
+  background-color:#f06;
+}
+
+.logo{
+  float:left;
+  width:120px; height:100px;
+  background-color:#ccc;
+}
+
+.logo > a{
+  display:block;
+  width:100%; height:100%;
+  background-color:#add;
+}
+
+.navigation{
+  float:right;
+  width:400px; height:100px;
+  background-color:#fc0;
+}
+.navigation ul {
+  width:100%; height:100%;
+  background-color:#cdd;
+}
+.navigation li {
+  float:left;
+  width:16.666666%; height:100%;
+  padding:10px; box-sizing:border-box;
+  background-image:linear-gradient(45deg,#cca,#adf);
+  list-style:none;
+}  
+.navigation  a {
+  display:block;
+  width:100%; height:100%;
+  background-color:rgba(100,100,100,0.3);
+}
+
+/* #section -------------------------- */
+#section {
+  width:100%; height:300px;
+}
+
+/* 
+ - float을 사용하면 float을 감싸고 있는 부모요소의 높이값이 auto일 경우 실제 높이는 0로 처리가 됨.
+ - 이에 float을 사용하는형태의 요소들중 마지막요소는 float을 사용하지 않고 clear:both를 사용한다.
+ - clear:both는 반드시 형태를 가지고 있어야하며, 내용상 요소로 담을 수 없는 경우에는 가상의 요소로 처리하게 한다
+ - 이때 발생시키는 가상의 요소는 ::after이다.
+ - ::after의 속성에는 반드시 content:""; 속성을 꼭꼭꼭 입력해야한다.
+*/
+
+/* 선택자 내부의 끝에 이유불문 가상으로 태그 붙이기 */
+#section > div {
+  float:left;
+  height:300px;
+}
+.sect_01{
+  /* float:left; */
+  width:40%; 
+  /* height:300px; */
+  background-color:#7a7;
+}
+
+.sect_02{
+  /* float:left; */
+  width:60%; 
+  /* height:300px;*/
+  background-color:#777;
+}
+
+/* #aside ----------------------------- */
+#aside > div{
+  float:left;
+  height:300px;
+}
+
+  .side_01 {
+    width:33.333333%;
+    background-color:#c9a;
+  }
+  .side_02 {
+    width: 33.33333334%;
+    background-color:#595;
+  }
+  .side_03 {
+    width: 33.333333%;
+    background-color:#a7c;
+  }
+
+
+/* #article ---------------------------- */
+#article{
+  width:100%; height:300px;
+  background-color:#797;
+}
+#article > div { float:left; }
+.art_01{
+  float:left;
+  width:33.333333%; height:300px;
+  background-color:#557;
+}
+.art_02{
+  float:left;
+  width:66.666666%; height:150px;
+  background-color:#77a;
+}
+.art_03{
+  float:left;
+  width:66.666666%; height:150px;
+  background-color:#0af;
+}
+
+
+/* #content ----------------------------- */
+#content{
+  width:100%; height:500px;
+  background-color:#f06;
+}
+#content > div { float:left; }
+#content > .art_01{
+  float:right;
+  width:30%; height:100%;
+  background-color:#a7c;
+}
+#content > .art_02{
+  width:70%; height:150px;
+  background-color:#ff5;
+}
+#content > .art_03{
+  width:70%; height:350px;
+  background-color:#f55;
+}
+
+/* #footer ---------------------------- */
+#footer {
+  width:100%; height:100px;
+  background-color:#0ff;
+}
+
+
+
