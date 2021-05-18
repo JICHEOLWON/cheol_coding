@@ -30,7 +30,9 @@ ul,ol,li{
 }
 
 .other_type{ background-color:#daf;}
-.height_fix_type{ background-color:#dfc;}
+.height_fix_type{
+  height:500px;
+   background-color:#dfc;}
 .ghost_type{ background-color:#dca;}
 
 
@@ -43,6 +45,11 @@ ul,ol,li{
   border-width:1px;
   border-style:solid;
   border-color:#171717;
+}
+
+.other_last {
+  width: 100%; height: 10px; background-color: #ccc;
+  clear:both;
 }
 
 .clear{ width:100%; height:0; clear:both;}
