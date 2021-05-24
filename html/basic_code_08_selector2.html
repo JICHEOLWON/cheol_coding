@@ -16,27 +16,29 @@
     <div class="part">
       <h3>형제 선택자</h3>
 
-       <!-- dl>(dt{dt_$}+dd{dd_$$}*4)*3 -->
-       <dl class="siblings">
-         <dt>dt_1</dt>
-         <dd>dd_01</dd>
-         <dd>dd_02</dd>
-         <dd>dd_03</dd>
-         <dd>dd_04</dd>
-         <dt>dt_2</dt>
-         <dd>dd_01</dd>
-         <dd>dd_02</dd>
-         <dd>dd_03</dd>
-         <dd>dd_04</dd>
-         <dt>dt_3</dt>
-         <dd>dd_01</dd>
-         <dd>dd_02</dd>
-         <dd>dd_03</dd>
-         <dd>dd_04</dd>
-       </dl>
+      <!-- dl>(dt{dt_$}+dd{dd_$$}*4)*3 -->
+      <dl class="siblings">
+        <dt>dt_1</dt>
+        <dd>dd_01</dd>
+        <dd>dd_02</dd>
+        <dd>dd_03</dd>
+        <dd>dd_04</dd>
+        <dt>dt_2</dt>
+        <dd>dd_01</dd>
+        <dd>dd_02</dd>
+        <dd>dd_03</dd>
+        <dd>dd_04</dd>
+        <dt>dt_3</dt>
+        <dd>dd_01</dd>
+        <dd>dd_02</dd>
+        <dd>dd_03</dd>
+        <dd>dd_04</dd>
+      </dl>
     </div>
+
     <div class="part">
       <h3>nth-child 선택자</h3>
+      <!-- ul.child>li*10{list_$$} -->
       <ul class="child">
         <li class="one">list_01</li>
         <li>list_02</li>
@@ -50,17 +52,18 @@
         <li>list_10</li>
       </ul>
     </div>
-                          
+
     <div class="part">
       <h3>nth-of-type</h3>
       <dl class="of-type">
-        <dt>dt_01</dt>        
+        <!-- (dt{dt_$$}+dd{dd_$$}*3)*3 -->
+        <dt>dt_01</dt>
         <dd>dd_01</dd>
         <dd>dd_02</dd>
         <dd>dd_03</dd>
         <dd>dd_04</dd>
         <dd>dd_05</dd>
-        
+
         <dt>dt_02</dt>
         <dd>dd_01</dd>
         <dd>dd_02</dd>
@@ -71,11 +74,9 @@
         <dd>dd_02</dd>
       </dl>
     </div>
-  </div>
-  
+
+  </div>  
+
   <!-- script -->
 </body>
 </html>
-
-
-

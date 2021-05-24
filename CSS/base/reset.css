@@ -22,6 +22,15 @@ a {
   text-decoration:none;
 }
 
+header,nav,section,article,footer,aside,main,figure,figcaption { display:block; }
+
+
+
+
+
+
+
+
 
 
 
